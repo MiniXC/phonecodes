@@ -198,8 +198,9 @@ _xdiacritics2ipa = {
 }
 
 # Create and _xsampa2ipa with '_'+k for each diacritic
+# exceptions are ~ for nasalization, = for syllabicity, and ` for retroflexion and rhotacization
 _xsampa_and_diac2ipa = _xsampa2ipa.copy()
-_xsampa_and_diac2ipa.update({ ('_'+k):v for (k,v) in _xdiacritics2ipa.items() })
+_xsampa_and_diac2ipa.update({ ('_'+k if k not in ['~', '=', '`'] else k):v for (k,v) in _xdiacritics2ipa.items() })
 
 _ipa2xsampa = { v:k for (k,v) in _xsampa_and_diac2ipa.items() }
 

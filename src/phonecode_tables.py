@@ -417,7 +417,7 @@ _callhome2ipa['cmn'] = {
     'o':'o',
     '>':'ɔ',
     'u':'u',
-    'R':'ɚ'
+    'R':'ə˞'
 }
 _callhome2ipa['cmn'].update(_tone2ipa['cmn'])
 _callhome_vowels['cmn']=set('iI%eEU&a@o>uR')
@@ -480,8 +480,8 @@ _arpabet2ipa = {
     'AW':'aʊ',
     'AY':'aɪ',
     'EH':'ɛ',
-    'ER':'ɝ',
-    'ER0':'ɚ',
+    'ER':'ɜ˞',
+    'ER0':'ə˞',
     'EY':'eɪ',
     'IH':'ɪ',
     'IH0':'ɨ',
@@ -530,7 +530,7 @@ _timit2ipa = _arpabet2ipa.copy()
 _timit2ipa.update({
     'AX':'ə',
     'AX-H':'ə̥',
-    'AXR':'ɚ',
+    'AXR':'ə˞',
     'B':'',
     'BCL':'b',
     'D':'',

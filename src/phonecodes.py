@@ -111,6 +111,9 @@ def disc2ipa(x, L):
     elif L == "eng":
         (tl, ttf) = translate_string(x, phonecode_tables._disc2ipa_english)
         return tl
+    elif L == "deu":
+        (tl, ttf) = translate_string(x, phonecode_tables._disc2ipa_german)
+        return tl
     else:
         (tl, ttf) = translate_string(x, phonecode_tables._disc2ipa)
         return tl

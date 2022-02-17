@@ -337,9 +337,14 @@ _ipa2disc["#"] = ""
 
 _disc2ipa_dutch = _disc2ipa.copy()
 _disc2ipa_dutch["w"] = "ʋ"
-_ipa2disc["ʋ"] = "w"
+
+_disc2ipa_german = _disc2ipa.copy()
+_disc2ipa_german["/"] = "a"
+
 _disc2ipa_english = _disc2ipa.copy()
 _disc2ipa_english["r"] = "ɻ"
+
+_ipa2disc["ʋ"] = "w"
 _ipa2disc["ɻ"] = "r"
 
 #######################################################################

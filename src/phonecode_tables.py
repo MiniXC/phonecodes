@@ -199,7 +199,7 @@ _xdiacritics2ipa = {
 
 # Create and _xsampa2ipa with '_'+k for each diacritic
 _xsampa_and_diac2ipa = _xsampa2ipa.copy()
-_xsampa_and_diac2ipa.update({ ('_'+k):v for (k,v) in _xdiacritics2ipa.items() })
+_xsampa_and_diac2ipa.update({(k if k in ['~', '=', '`'] else ('_'+k)):v for (k,v) in _xdiacritics2ipa.items()})
 
 _ipa2xsampa = { v:k for (k,v) in _xsampa_and_diac2ipa.items() }
 

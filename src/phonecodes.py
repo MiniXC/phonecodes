@@ -15,13 +15,8 @@
    phonecodes.consonants
    # list known IPA symbols of vowels, consonants.
    # for other tables, see phonecode_tables.py
-<<<<<<< HEAD
-'''
-import re,sys
-=======
 """
 import re, sys
->>>>>>> 8282cdfd581c3b4ae325b70cfb96c8ffd932ea62
 from . import phonecode_tables
 
 CODES = set(("ipa", "arpabet", "xsampa", "disc", "callhome"))
